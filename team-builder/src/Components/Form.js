@@ -1,8 +1,10 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Form = props => {
     const initialTeam = { name: "", email: "", role:"", location:""}
     const [newTeam, setNewTeam] = useState(initialTeam);
+
+    
 
     const handleChange = event => {
         setNewTeam({ 
@@ -14,10 +16,13 @@ const Form = props => {
     const handleSubmit = event => {
         event.preventDefault();
         console.log(event);
-        props.setTeam ([newTeam, ...props.team])
+        props.setTeam ([newTeam, ...props.team]);
+        resetForm();
     };
 
-
+    const resetForm = () => {
+        setNewTeam(initialTeam);
+    }
 
     return (
         <div>
@@ -51,7 +56,8 @@ const Form = props => {
                 onChange={handleChange}
                 value={newTeam.location}/>
             </label>
-            <button className="formButton">Submit</button>
+            <button type="submit" className="formButton">Submit</button>
+
             </form>
         </div>
     );

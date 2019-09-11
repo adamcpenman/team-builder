@@ -9,20 +9,23 @@ import data from './Data';
 import TeamList from './Components/TeamList';
 
 function App() {
+  
   const [team, setTeam] = useState ([data]);
   console.log(data)
+
 
   useEffect(() => {
     setTeam(data);
   }, []);
+
+
 
   return (
     <div className="App">
 
       <Form team={team} setTeam={setTeam}/>
       <TeamList team={team}/>
-
-      {/* <Route path='/form' component={Form}/> */}
+  
       
     </div>
   );

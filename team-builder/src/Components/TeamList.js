@@ -9,6 +9,7 @@ return (
                     <h2>{teamMember.email}</h2>
                     <h3>{teamMember.role}</h3>
                     <h4>{teamMember.location}</h4>
+                    <button>edit</button>
                 </div>
             ))}
         </div>

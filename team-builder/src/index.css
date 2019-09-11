@@ -17,6 +17,7 @@ code {
   font-family: 'ABeeZee', sans-serif;
   font-family: 'Lexend Mega', sans-serif;
   color: #292F36;
+  padding-bottom: 30px;
 
 }
 
@@ -28,7 +29,6 @@ code {
   padding: 25px 15px;
   margin: 0 auto;
   margin-top: 40px;
-  margin-bottom: 5px;
   border-radius: 5px;
 }
 
