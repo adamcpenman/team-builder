@@ -12,14 +12,66 @@ code {
     monospace;
 }
 
+.App {
+  background-color: #F3EAF4;
+  font-family: 'ABeeZee', sans-serif;
+  font-family: 'Lexend Mega', sans-serif;
+  color: #292F36;
+
+}
+
 .teamCard {
-  background: lightblue;
+  background: #E5CEDC;
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 25px 15px;
   margin: 0 auto;
   margin-top: 40px;
+  margin-bottom: 5px;
   border-radius: 5px;
 }
+
+form {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #CAE5FF;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 15px;
+  width: 100%;
+  max-width: 300px;
+}
+
+input {
+  width: 150px;
+  background-color: #F3EAF4;
+  padding: 5px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 6px;
+   outline: none;
+}
+
+.formButton {
+  background-color: #F2D1C9;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 75px;
+  margin: 10px;
+}
+
+.formButton:hover {
+  /* background-color: #BCA0BC; */
+  background-color: #ECE8EF;
+}
+
+.formButton:visited {
+  background-color: #ECE8EF;
+}
+
 
 

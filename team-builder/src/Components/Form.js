@@ -26,28 +26,28 @@ const Form = props => {
             <label>
                 <input type="text" 
                 name="name" 
-                placeholder="What is your name?" 
+                placeholder="Name" 
                 onChange={handleChange}
                 value={newTeam.name}/>
             </label>
               <label>
                 <input type="text" 
                 name="email" 
-                placeholder="What is your email?"
+                placeholder="Email"
                 onChange={handleChange}
                 value={newTeam.email}/>
             </label>
               <label>
                 <input type="text" 
                 name="role" 
-                placeholder="What is your role?"
+                placeholder="Role"
                 onChange={handleChange}
                 value={newTeam.role}/>
             </label>
               <label>
                 <input type="text" 
                 name="location" 
-                placeholder="What is your location?"
+                placeholder="Location"
                 onChange={handleChange}
                 value={newTeam.location}/>
             </label>
